@@ -35,12 +35,17 @@ there are two ways to do it:
 
 
 ---
-# Set-up
+# Set-Up
 
 Once you have the downloaded folder, follow these steps
 
+1. Go to obsidian > settings > Plugin > Enable "Custom CSS"
 1. Copy `obsidian.css` file
 2. Paste it into your obsidian vault (vault = folder)
+
+If you already have an obsidian.css file, delete that one, and copy paste this one instead.
+
+you can only have one obsidian.css file. If you already had one, it's probably from the ocmmunity themes. You can always bring install one of those again if you want to.
 
 
 
