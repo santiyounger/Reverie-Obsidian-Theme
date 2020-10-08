@@ -13,12 +13,9 @@ If you like this theme, leave a comment on the [Obsidian Forum Post](https://for
  ## Reverie 
  rev•er•ie rĕv′ə-rē
 
-    n.
-    A state of abstracted musing; daydreaming.
-    n.
-    A daydream.
-    n.
-    A state of mental abstraction in which more or less aimless fancy predominates over the reasoning faculty; dreamy meditation; fanciful musing.
+> n. A state of abstracted musing; daydreaming.
+> n. A daydream.
+> n. A state of mental abstraction in which more or less aimless fancy predominates over the reasoning faculty; dreamy meditation; fanciful musing.
     
 # Installation
 
@@ -33,14 +30,13 @@ there are two ways to do it:
 	2. click on download zip
 	3. Extract the zip folder
 
-
 ---
 # Set-Up
 
 Once you have the downloaded folder, follow these steps
 
 1. Go to obsidian > settings > Plugin > Enable "Custom CSS"
-1. Copy `obsidian.css` file
+1. Copy the `obsidian.css` file from this folder
 2. Paste it into your obsidian vault (vault = folder)
 
 If you already have an obsidian.css file, delete that one, and copy paste this one instead.
