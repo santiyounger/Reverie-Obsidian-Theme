@@ -7,7 +7,7 @@ This theme is mainly designed for dark mode, but light mode works well too.
 ![dark](img/reverie-2020-09-14-light.png)
 
 
-If you like this theme, leave a comment on the [Obsidian Forum](https://forum.obsidian.md/t/theme-reverie-dark-light/6770) post I made for it.
+If you like this theme, leave a comment on the [Obsidian Forum Post](https://forum.obsidian.md/t/theme-reverie-dark-light/6770) I made for it.
 
 # Theme Name:
  ## Reverie 
