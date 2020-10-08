@@ -38,8 +38,10 @@ there are two ways to do it:
 Once you have the downloaded folder, follow these steps
 
 1. Go to obsidian > settings > Plugin > Enable "Custom CSS"
-1. Copy the `obsidian.css` file from this folder
-2. Paste it into your obsidian vault (vault = folder)
+2. Copy the `obsidian.css` file from this folder
+3. Paste it into your obsidian vault (vault = folder)
+
+---
 
 If you already have an obsidian.css file, delete that one, and copy paste this one instead.
 
@@ -51,5 +53,8 @@ You can always bring back other themes, by installing them from the community th
 
 Just keep in mind that you'll have to repeat the process to install this theme again.
 
+Done.
 
+# Let Me Know If You Like It
 
+Hope you enjoy, let me know if you like the theme in the [Obsidian Forum Post](https://forum.obsidian.md/t/theme-reverie-dark-light/6770) of this theme.
