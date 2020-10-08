@@ -22,17 +22,25 @@ If you like this theme, leave a comment on the [Obsidian Forum Post](https://for
     
 # Installation
 
-Download the theme, there are two ways to do it
+## Download the theme
+
+there are two ways to do it:
 
 1. git clone
 
 3. download zip 
 	1. click on the upper right botton that says "code"
 	2. click on download zip
+	3. Extract the zip folder
 
-Once you have the downlaoded folder
 
-Follow these steps
+---
+# Set-up
 
-1. Copy obsidian.css
+Once you have the downloaded folder, follow these steps
+
+1. Copy `obsidian.css` file
+2. Paste it into your obsidian vault (vault = folder)
+
+
 
