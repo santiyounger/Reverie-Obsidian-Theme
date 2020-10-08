@@ -43,7 +43,13 @@ Once you have the downloaded folder, follow these steps
 
 If you already have an obsidian.css file, delete that one, and copy paste this one instead.
 
-you can only have one obsidian.css file. If you already had one, it's probably from the ocmmunity themes. You can always bring install one of those again if you want to.
+you can only have one obsidian.css file at the time.
+
+If you already had one, it's probably from the community themes.
+
+You can always bring back other themes, by installing them from the community themes.
+
+Just keep in mind that you'll have to repeat the process to install this theme again.
 
 
 
