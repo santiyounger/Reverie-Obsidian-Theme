@@ -1,15 +1,13 @@
 /* This Theme is called "Reverie" and Obsidian Theme created by Santi Younger */
 
 /* Last Update:
-2020-10-08 11:16
-     */
+2020-10-08 11:50
+*/
 
 :root
 {
 --font-monospace: "Source Code Pro", monospace;
 }
-
-.markdown-source-view { font-family: var(--font-monospace) }
 
 .theme-dark
 {
@@ -70,73 +68,46 @@
 /*  --text-selection:             add if needed */
 }
 
-.cm-header-1 {
-font-size: 16px;
-color: var(--text-title-h1) !important;
+.cm-header-1,
+.markdown-preview-section h1
+{
+    font-weight: 500 !important;
+    font-size: 34px !important;
+    color: var(--text-title-h1) !important;
 }
 
-.cm-header-2 {
-font-size: 16px;
-color: var(--text-title-h2) !important;
+.cm-header-2,
+.markdown-preview-section h2
+{
+    font-weight: 500 !important;
+    font-size: 26px !important;
+    color: var(--text-title-h2) !important;
 }
 
-.cm-header-3 {
-font-size: 16px;
-color: var(--text-title-h3) !important;
+.cm-header-3,
+.markdown-preview-section h3
+{
+    font-weight: 500 !important;
+    font-size: 22px !important;
+    color: var(--text-title-h3) !important;
 }
 
-.cm-header-4 {
-font-size: 16px;
-color: var(--text-title-h4) !important;
+.cm-header-4,
+.markdown-preview-section h4
+{
+    font-weight: 500 !important;
+    font-size: 20px !important;
+    color: var(--text-title-h4) !important;
 }
 
-.cm-header-5 {
-font-size: 16px;
-color: var(--text-title-h5) !important;
-}
-
-.cm-header-6 {
-font-size: 16px;
-color: --text-normal;
-color: var(--text-title-h6) !important;
-}
-
-.markdown-preview-view h1 {
-font-weight: 500 !important;
-font-size: 20px;
-line-height: 24px;
-color: var(--text-title-h1) !important;
-}
-
-.markdown-preview-view h2 {
-font-size: 20px;
-line-height: 24px;
-color: var(--text-title-h2) !important;
-}
-
-.markdown-preview-view h3 {
-font-size: 20px;
-line-height: 24px;
-color: var(--text-title-h3) !important;
-}
-
-.markdown-preview-view h4 {
-font-size: 20px;
-line-height: 24px;
-color: var(--text-title-h4) !important;
-}
-
-.markdown-preview-view h5 {
-font-size: 20px;
-line-height: 24px;
-color: var(--text-title-h5) !important;
-}
-
-.markdown-preview-view h6 {
-font-size: 20px;
-line-height: 24px;
-color: --text-normal;
-color: var(--text-title-h6) !important;
+.cm-header-5,
+.cm-header-6,
+.markdown-preview-section h5,
+.markdown-preview-section h6
+{
+    font-weight: 500 !important;
+    font-size: 18px !important;
+    color: var(--text-title-h5) !important;
 }
 
 /* ------------ other basic theme configurations ------------*/
