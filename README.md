@@ -19,3 +19,20 @@ If you like this theme, leave a comment on the [Obsidian Forum Post](https://for
     A daydream.
     n.
     A state of mental abstraction in which more or less aimless fancy predominates over the reasoning faculty; dreamy meditation; fanciful musing.
+    
+# Installation
+
+Download the theme, there are two ways to do it
+
+1. git clone
+
+3. download zip 
+	1. click on the upper right botton that says "code"
+	2. click on download zip
+
+Once you have the downlaoded folder
+
+Follow these steps
+
+1. Copy obsidian.css
+
