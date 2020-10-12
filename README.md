@@ -1,6 +1,5 @@
 This theme is mainly designed for dark mode, but light mode works well too.
 
-
 # Dark Mode
 ![dark](img/reverie-2020-09-14-dark.png)
 
