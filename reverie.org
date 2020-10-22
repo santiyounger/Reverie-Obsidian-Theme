@@ -1,4 +1,7 @@
   # -*- org-confirm-babel-evaluate: nil -*-
+  :PROPERTIES:
+  :TOC:      :include all :depth 7
+  :END:
   #+title: Obsidian theme Personal Reverie
   #+PROPERTY: header-args:elisp :tangle ~/Dropbox/obsidian/obsidian-personal/obsidian.css :exports code :noweb yes
   
@@ -12,7 +15,13 @@
 | #2ccab7;    |
 | #faf2d6;    |
 
+:CONTENTS:
+
+:END:
 * Reverie Github Theme
+  :PROPERTIES:
+  :TOC:      :include all :depth 7
+  :END:
   change [[id:19d28af6-caa8-493d-8091-196695a4600c][heading normal]] from css to elisp, so that font is normal
 ** Info
    #+BEGIN_SRC elisp
