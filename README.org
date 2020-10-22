@@ -46,9 +46,6 @@ Done, enjoy!
 Hope you enjoy, let me know if you like the theme in the [[https://forum.obsidian.md/t/theme-reverie-dark-light/6770][Obsidian Forum Post]] of this theme.
 
 * Look Into The Code
-I create this theme from an org-mode file in spacemacs and export it to an obsidian.css
+*I create this theme from an org-mode file in Spacemacs* and export it to an obsidian.css
 
-For anyone looking to see more on the code used to make this theme check out the [[https://github.com/santiyounger/Reverie-Obsidian-Theme/blob/master/reverie.org][org-mode file.]] 
-
-
-
+For anyone interested to learn more on the code to make this theme, check out the org-mode file I used [[file:reverie.org][reverie.org]]. There are extra features in there.
