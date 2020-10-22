@@ -12,7 +12,7 @@
 * Wasp Github Theme
 ** Info
    #+BEGIN_SRC elisp
-     /* This Theme is called "Reverie" and Obsidian Theme created by Santi Younger */
+     /* This Theme is called "Wasp" and Obsidian Theme created by Santi Younger */
    #+END_SRC 
 ** Last update
    #+BEGIN_SRC elisp
