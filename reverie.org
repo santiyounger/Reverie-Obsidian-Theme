@@ -74,7 +74,6 @@ The Theme available in obsidian end at the [[#end-of-main-theme][end of main the
 | #faf2d6;    |
 
 * Reverie Github Theme
-  change [[id:19d28af6-caa8-493d-8091-196695a4600c][heading normal]] from css to elisp, so that font is normal
 ** Info
    #+BEGIN_SRC elisp
      /* This Theme is called "Reverie" and Obsidian Theme created by Santi Younger */
