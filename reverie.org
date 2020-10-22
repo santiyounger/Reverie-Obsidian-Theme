@@ -1,11 +1,62 @@
   # -*- org-confirm-babel-evaluate: nil -*-
-  :PROPERTIES:
-  :TOC:      :include all :depth 7
-  :END:
   #+title: Obsidian theme Personal Reverie
   #+PROPERTY: header-args:elisp :tangle ~/Dropbox/obsidian/obsidian-personal/obsidian.css :exports code :noweb yes
-  
-  This org-mode file is the main file I use to maintain this theme
+
+* TOC                                                                   :TOC:
+- [[#palette-dark-mode][Palette Dark Mode]]
+- [[#reverie-github-theme][Reverie Github Theme]]
+  - [[#info][Info]]
+  - [[#last-update][Last update]]
+  - [[#root-and-fonts][root and fonts]]
+  - [[#theme-dark][Theme Dark]]
+    - [[#highlight-match-dark-theme][highlight match dark theme]]
+  - [[#theme-light][Theme Light]]
+  - [[#headings-normal][Headings normal]]
+  - [[#extra][extra]]
+  - [[#graph][graph]]
+  - [[#end-of-main-theme][end of main theme]]
+- [[#---------------personal-extra-hacks-------------------------------][-------------- personal extra hacks ------------------------------]]
+- [[#link-pills-sy][link pills SY]]
+- [[#tag-pills][tag pills]]
+- [[#bullet-point-lines][bullet point lines]]
+- [[#bullet-color][bullet color]]
+- [[#image-zoom][image zoom]]
+- [[#columns-view-for-file-explorer-pane][columns view for file explorer pane]]
+- [[#arrows-before-links][arrows before links]]
+- [[#vim-cursor][vim cursor]]
+  - [[#cursor-vim-moderemove-blink][cursor vim mode(remove blink)]]
+  - [[#cursor-width][cursor width]]
+- [[#collapsible-sidebar][collapsible sidebar]]
+- [[#font][font]]
+  - [[#info-1][info]]
+  - [[#font-code][font code]]
+- [[#heading-sizes][Heading sizes]]
+  - [[#info-2][info]]
+  - [[#heading-in-edit-mode][heading in edit mode]]
+  - [[#headings-preview][Headings Preview]]
+- [[#column-view][column view]]
+- [[#andy-mode-horizontal-mode-v27][andy mode horizontal mode v2.7]]
+- [[#andy-mode-bonus-half-screen-mode][andy mode bonus half screen mode]]
+- [[#favorite-andy-mode-bonus-half-screen--no-stacking-panes][favorite andy mode bonus half screen + no stacking panes]]
+- [[#-------------unused-extra--------------------------][------------ unused extra -------------------------]]
+- [[#commenting-out--removing-mark-from-embed][Commenting out / removing mark from embed]]
+- [[#remove-yaml-front-matter-from-embed][Remove Yaml Front Matter from embed]]
+- [[#tags-boxes][tags boxes]]
+- [[#bigger-pop-up-previews][Bigger Pop up previews]]
+- [[#stylish-quotes][stylish quotes]]
+- [[#naked-embed][Naked Embed]]
+- [[#enlarge-image-on-hover][Enlarge image on hover]]
+- [[#justification][justification]]
+- [[#andy-vertical-mode][andy vertical mode]]
+- [[#andy-mode-upright][andy mode upright]]
+- [[#focus-mode][focus mode]]
+- [[#justify][justify]]
+- [[#bullet-point-lines-1][bullet point lines]]
+- [[#block-cursor][Block cursor]]
+- [[#clutter-free-edit][clutter free edit]]
+- [[#--------------my-own-custom-----------------][--------------my own custom ----------------]]
+- [[#changing-internal-link-styles][changing internal link styles]]
+- [[#link-pills-personal-attempt][link pills personal attempt]]
 
 * Palette Dark Mode
   
@@ -15,13 +66,7 @@
 | #2ccab7;    |
 | #faf2d6;    |
 
-:CONTENTS:
-
-:END:
 * Reverie Github Theme
-  :PROPERTIES:
-  :TOC:      :include all :depth 7
-  :END:
   change [[id:19d28af6-caa8-493d-8091-196695a4600c][heading normal]] from css to elisp, so that font is normal
 ** Info
    #+BEGIN_SRC elisp
