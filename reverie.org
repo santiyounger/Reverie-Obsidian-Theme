@@ -1,7 +1,16 @@
   # -*- org-confirm-babel-evaluate: nil -*-
   #+title: Obsidian theme Personal Reverie
   #+PROPERTY: header-args:elisp :tangle ~/Dropbox/obsidian/obsidian-personal/obsidian.css :exports code :noweb yes
+  
+#+OPTIONS: toc:2   
+
   This org-mode file is the main file I use to maintain this theme
+  
+* Heading
+:PROPERTIES:
+:TOC:      :include all
+:END:
+
 
 * Palette Dark Mode
   
