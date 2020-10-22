@@ -81,7 +81,7 @@ The Theme available in obsidian end at the [[#end-of-main-theme][end of main the
 ** Last update
    #+BEGIN_SRC elisp
      /* Last Update:
- 2020-10-22 09:38
+2020-10-22 12:36
      ,*/
    #+END_SRC   
 ** root and fonts
@@ -168,7 +168,7 @@ The Theme available in obsidian end at the [[#end-of-main-theme][end of main the
    :PROPERTIES:
    :ID:       19d28af6-caa8-493d-8091-196695a4600c
    :END:
-   #+BEGIN_SRC css
+   #+BEGIN_SRC elisp
      .cm-header-1,
      .markdown-preview-section h1
      {

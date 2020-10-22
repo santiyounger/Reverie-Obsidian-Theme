@@ -1,7 +1,8 @@
-/* This Theme is called "Reverie" and Obsidian Theme created by Santi Younger https://santiyounger.com/*/
+/* This Theme is called "Reverie" and Obsidian Theme created by Santi Younger */
+
 /* Last Update:
-2020-10-22 09:38
-    */
+2020-10-22 12:36
+     */
 
 :root
 {
@@ -71,6 +72,48 @@ background-color: #483699;
 --interactive-accent-rgb:     #22a578;
 --vim-cursor:                 #22a578;
 /*  --text-selection:             add if needed */
+}
+
+.cm-header-1,
+.markdown-preview-section h1
+{
+    font-weight: 500 !important;
+    font-size: 34px !important;
+    color: var(--text-title-h1) !important;
+}
+
+.cm-header-2,
+.markdown-preview-section h2
+{
+    font-weight: 500 !important;
+    font-size: 26px !important;
+    color: var(--text-title-h2) !important;
+}
+
+.cm-header-3,
+.markdown-preview-section h3
+{
+    font-weight: 500 !important;
+    font-size: 22px !important;
+    color: var(--text-title-h3) !important;
+}
+
+.cm-header-4,
+.markdown-preview-section h4
+{
+    font-weight: 500 !important;
+    font-size: 20px !important;
+    color: var(--text-title-h4) !important;
+}
+
+.cm-header-5,
+.cm-header-6,
+.markdown-preview-section h5,
+.markdown-preview-section h6
+{
+    font-weight: 500 !important;
+    font-size: 18px !important;
+    color: var(--text-title-h5) !important;
 }
 
 /* ------------ other basic theme configurations ------------*/
