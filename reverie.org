@@ -2,7 +2,15 @@
   #+title: Obsidian theme Personal Reverie
   #+PROPERTY: header-args:elisp :tangle ~/Dropbox/obsidian/obsidian-personal/obsidian.css :exports code :noweb yes
 
-* TOC                                                                   :TOC:
+*This org-mode file is the main file I use to maintain this theme.* I make it on spacemacs and export it to obsidian.css with babel tangle.
+
+The Theme available in obsidian end at the [[#end-of-main-theme][end of main theme]].
+
+ Beyond that I have all the configurations of hacks from the community.
+ 
+ I even have a list of the ones I'm not currently using.
+
+* Table Of Contents                                                     :TOC:
 - [[#palette-dark-mode][Palette Dark Mode]]
 - [[#reverie-github-theme][Reverie Github Theme]]
   - [[#info][Info]]
@@ -59,7 +67,6 @@
 - [[#link-pills-personal-attempt][link pills personal attempt]]
 
 * Palette Dark Mode
-  
 | hex palette |
 |-------------|
 | #1A2023;    |
