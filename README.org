@@ -44,3 +44,5 @@ Done, enjoy!
 
 Hope you enjoy, let me know if you like the theme in the [[https://forum.obsidian.md/t/theme-reverie-dark-light/6770][Obsidian Forum Post]] of this theme.
 
+
+For anyone looking to see more on the code used to make this code check out the [[https://github.com/santiyounger/Reverie-Obsidian-Theme/blob/master/reverie.org][org-mode file.]] 
