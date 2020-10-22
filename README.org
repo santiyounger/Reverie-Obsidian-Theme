@@ -1,10 +1,10 @@
 This theme is mainly designed for dark mode, but light mode works well too.
 
 * Dark Mode
-file:img/reverie-2020-09-14-dark.png
+[[file:img/reverie-2020-09-14-dark.png]]
 * Light Mode
 
-file:img/reverie-2020-09-14-light.png
+[[file:img/reverie-2020-09-14-light.png]]
 
 If you like this theme, leave a comment on the [[https://forum.obsidian.md/t/theme-reverie-dark-light/6770][Obsidian Forum Post]] of this theme.
 * Theme Name:
