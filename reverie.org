@@ -1,16 +1,18 @@
   # -*- org-confirm-babel-evaluate: nil -*-
   #+title: Obsidian theme Personal Reverie
   #+PROPERTY: header-args:elisp :tangle ~/Dropbox/obsidian/obsidian-personal/obsidian.css :exports code :noweb yes
+#+toc: headlines 7
 
-* table
-
-  create a cool table with main hex
+  This org-mode file is the main file I use to maintain this theme
   
-| name           | hex     |
-|----------------+---------|
-| background     | #ff0000 |
-| text           | #fff    |
-| something else | #df0    |
+
+* Palette Dark Mode
+  
+| hex palette |
+|-------------|
+| #1A2023;    |
+| #2ccab7;    |
+| #faf2d6;    |
 
 * Reverie Github Theme
   change [[id:19d28af6-caa8-493d-8091-196695a4600c][heading normal]] from css to elisp, so that font is normal
