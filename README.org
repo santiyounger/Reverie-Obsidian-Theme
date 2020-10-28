@@ -1,57 +1,60 @@
 This theme is mainly designed for dark mode, but light mode works well too.
 
 * Table of Contents                                                     :TOC:
-- [[#dark-mode][Dark Mode]]
-- [[#light-mode][Light Mode]]
-- [[#theme-name][Theme Name]]
-  - [[#reverie][Reverie]]
-- [[#set-up][Set-Up]]
-- [[#org-sidian-bullets][Org-sidian Bullets]]
-- [[#let-me-know-if-you-like-it][Let Me Know If You Like It]]
-- [[#look-into-the-code][Look Into The Code]]
+  - [[#dark-mode][Dark Mode]]
+  - [[#light-mode][Light Mode]]
+  - [[#theme-name][Theme Name]]
+    - [[#reverie][Reverie]]
+  - [[#set-up][Set-Up]]
+  - [[#special-features][Special Features]]
+    - [[#org-sidian-bullets][Org-sidian Bullets]]
+  - [[#let-me-know-if-you-like-it][Let Me Know If You Like It]]
+  - [[#look-into-the-code][Look Into The Code]]
 
-* Dark Mode
-[[file:img/reverie-2020-09-14-dark.png]]
-* Light Mode
+** Dark Mode
+ [[file:img/reverie-2020-09-14-dark.png]]
+** Light Mode
 
-[[file:img/reverie-2020-09-14-light.png]]
+ [[file:img/reverie-2020-09-14-light.png]]
 
-If you like this theme, leave a comment on the [[https://forum.obsidian.md/t/theme-reverie-dark-light/6770][Obsidian Forum Post]] of this theme.
-* Theme Name
-** Reverie 
-  rev•er•ie rĕv′ə-rē
-#+BEGIN_QUOTE
-n. A state of abstracted musing; daydreaming.
-n. A daydream.
-n. A state of mental abstraction in which more or less aimless fancy predominates over the reasoning faculty; dreamy meditation; fanciful musing.
-#+END_QUOTE
+ If you like this theme, leave a comment on the [[https://forum.obsidian.md/t/theme-reverie-dark-light/6770][Obsidian Forum Post]] of this theme.
+** Theme Name
+*** Reverie 
+   rev•er•ie rĕv′ə-rē
+ #+BEGIN_QUOTE
+ n. A state of abstracted musing; daydreaming.
+ n. A daydream.
+ n. A state of mental abstraction in which more or less aimless fancy predominates over the reasoning faculty; dreamy meditation; fanciful musing.
+ #+END_QUOTE
     
-* Set-Up
-*Reverie is now available in Obsidian Community Themes.*
+** Set-Up
+ *Reverie is now available in Obsidian Community Themes.*
 
- In obsidian go to Settings > Appearance > Turn on "Custom CSS"
-Click "See Community Themes"
+  In obsidian go to Settings > Appearance > Turn on "Custom CSS"
+ Click "See Community Themes"
 
-Search for: Reverie by Santi Younger
+ Search for: Reverie by Santi Younger
 
-Click Use
+ Click "Use"
 
-If you get a window click "Overwrite"
+ If you get a window click "Overwrite"
 
-Done, enjoy!
+ Done, enjoy!
 
-* Org-sidian Bullets 
-This theme has [[https://github.com/santiyounger/Org-sidian-Bullets][Org-sidian-Bullets]] implemented into it.
-This is what it looks like:
+** Special Features
+*** Org-sidian Bullets 
+  This theme has [[https://github.com/santiyounger/Org-sidian-Bullets][Org-sidian-Bullets]] implemented into it.
+  This is what it looks like:
 
-[[file:img/org-sidian-reverie.png]]
+  [[file:img/org-sidian-reverie.png]]
 
-* Let Me Know If You Like It
+** Let Me Know If You Like It
 
-Hope you enjoy, let me know if you like the theme in the [[https://forum.obsidian.md/t/theme-reverie-dark-light/6770][Obsidian Forum Post]] of this theme.
+ Hope you enjoy, let me know if you like the theme in the [[https://forum.obsidian.md/t/theme-reverie-dark-light/6770][Obsidian Forum Post]] of this theme.
 
-* Look Into The Code
-*I create this theme from an org-mode file in Spacemacs* and export it to an obsidian.css
+** Look Into The Code
+ *I create this theme from an org-mode file in Spacemacs* and export it to an obsidian.css
 
-For anyone interested to learn more on the code to make this theme, check out the org-mode file I used [[file:reverie.org][reverie.org]]. There are extra features in there.
+ For anyone interested to learn more on the code to make this theme, check out the org-mode file I used [[file:reverie.org][reverie.org]]. There are extra features in there.
 
+  

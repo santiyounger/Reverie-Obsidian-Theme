@@ -26,6 +26,7 @@ The Theme available in obsidian end at the [[#end-of-main-theme][end of main the
   - [[#vim-cursor-color-blink-width][Vim cursor color, blink, width]]
   - [[#org-sidian-preview--heading-sizes][org-sidian preview + heading sizes]]
   - [[#end-of-main-theme][end of main theme]]
+  - [[#collapsible-sidebar][collapsible sidebar]]
   - [[#-----------------personal-extra-hacks-----------------------][---------------- personal extra hacks ----------------------]]
 - [[#-------------personal-extra-hacks-----------------------][------------ personal extra hacks ----------------------]]
 - [[#wasp-primary--everything-else][Wasp Primary / Everything Else]]
@@ -36,7 +37,7 @@ The Theme available in obsidian end at the [[#end-of-main-theme][end of main the
   - [[#image-zoom][image zoom]]
   - [[#columns-view-for-file-explorer-pane][columns view for file explorer pane]]
   - [[#arrows-before-links][arrows before links]]
-  - [[#collapsible-sidebar][collapsible sidebar]]
+  - [[#collapsible-sidebar-1][collapsible sidebar]]
   - [[#font][font]]
     - [[#info-1][info]]
     - [[#font-code][font code]]
@@ -666,6 +667,17 @@ The Theme available in obsidian end at the [[#end-of-main-theme][end of main the
      /*-----------------------------------------*/
      /* End of main theme, extra functionality can be added below */
    #+END_SRC
+** collapsible sidebar
+  [[https://forum.obsidian.md/t/meta-post-common-css-hacks/1978/3?u=santi][Meta Post - Common CSS Hacks - Share & showcase - Obsidian Forum]] 
+  #+BEGIN_SRC elisp
+ .workspace-ribbon.is-collapsed:not(:hover) .workspace-ribbon-collapse-btn, 
+ .workspace-ribbon.is-collapsed:not(:hover) .side-dock-actions, 
+ .workspace-ribbon.is-collapsed:not(:hover) .side-dock-settings {display:none;}
+ .workspace-ribbon.is-collapsed:not(:hover) {width: 0;}
+ .workspace-split.mod-left-split[style="width: 0px;"] {margin-left: 0;}
+ .workspace-split.mod-right-split[style="width: 0px;"] {margin-right: 0;}
+ .workspace-ribbon {transition: none}
+ #+END_SRC  
 ** ---------------- personal extra hacks ----------------------
    #+BEGIN_SRC elisp
      /* -------------------------------------------------------------- */
