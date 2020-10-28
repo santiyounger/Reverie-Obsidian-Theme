@@ -4,6 +4,7 @@ This theme is mainly designed for dark mode, but light mode works well too.
 - [[#dark-mode][Dark Mode]]
 - [[#light-mode][Light Mode]]
 - [[#theme-name][Theme Name]]
+  - [[#reverie][Reverie]]
 - [[#set-up][Set-Up]]
 - [[#let-me-know-if-you-like-it][Let Me Know If You Like It]]
 - [[#look-into-the-code][Look Into The Code]]
@@ -16,14 +17,15 @@ This theme is mainly designed for dark mode, but light mode works well too.
 
 If you like this theme, leave a comment on the [[https://forum.obsidian.md/t/theme-reverie-dark-light/6770][Obsidian Forum Post]] of this theme.
 * Theme Name
- ## Reverie 
- rev•er•ie rĕv′ə-rē
+** Reverie 
+  rev•er•ie rĕv′ə-rē
+#+BEGIN_QUOTE
+n. A state of abstracted musing; daydreaming.
 
-> n. A state of abstracted musing; daydreaming.
+ > n. A daydream.
 
-> n. A daydream.
-
-> n. A state of mental abstraction in which more or less aimless fancy predominates over the reasoning faculty; dreamy meditation; fanciful musing.
+ > n. A state of mental abstraction in which more or less aimless fancy predominates over the reasoning faculty; dreamy meditation; fanciful musing.
+#+END_QUOTE
     
 * Set-Up
 
@@ -49,3 +51,4 @@ Hope you enjoy, let me know if you like the theme in the [[https://forum.obsidia
 *I create this theme from an org-mode file in Spacemacs* and export it to an obsidian.css
 
 For anyone interested to learn more on the code to make this theme, check out the org-mode file I used [[file:reverie.org][reverie.org]]. There are extra features in there.
+
