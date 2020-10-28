@@ -20,13 +20,14 @@ The Theme available in obsidian end at the [[#end-of-main-theme][end of main the
   - [[#theme-dark][Theme Dark]]
     - [[#highlight-match-dark-theme][highlight match dark theme]]
   - [[#theme-light][Theme Light]]
-  - [[#headings-normal-disabled][Headings normal (disabled)]]
+  - [[#headings-normal][Headings normal]]
   - [[#extra][extra]]
   - [[#graph][graph]]
   - [[#vim-cursor-color-blink-width][Vim cursor color, blink, width]]
   - [[#org-sidian-preview--heading-sizes][org-sidian preview + heading sizes]]
   - [[#end-of-main-theme][end of main theme]]
   - [[#-----------------personal-extra-hacks-----------------------][---------------- personal extra hacks ----------------------]]
+- [[#-------------personal-extra-hacks-----------------------][------------ personal extra hacks ----------------------]]
 - [[#wasp-primary--everything-else][Wasp Primary / Everything Else]]
   - [[#link-pills-sy][link pills SY]]
   - [[#tag-pills][tag pills]]
@@ -40,10 +41,6 @@ The Theme available in obsidian end at the [[#end-of-main-theme][end of main the
     - [[#info-1][info]]
     - [[#font-code][font code]]
     - [[#font-size-how-to-change-font-size][font size (how to change font size)]]
-  - [[#heading-sizes][Heading sizes]]
-    - [[#info-2][info]]
-    - [[#heading-in-edit-mode][heading in edit mode]]
-    - [[#headings-preview][Headings Preview]]
   - [[#andy-mode-horizontal-mode-v27][andy mode horizontal mode v2.7]]
   - [[#andy-mode-bonus-half-screen-mode][andy mode bonus half screen mode]]
   - [[#hide-url][hide URL]]
@@ -120,7 +117,6 @@ The Theme available in obsidian end at the [[#end-of-main-theme][end of main the
      }
    #+END_SRC 
 ** Theme Dark
-   
    #+BEGIN_SRC elisp
      .theme-dark
      {
@@ -135,6 +131,7 @@ The Theme available in obsidian end at the [[#end-of-main-theme][end of main the
      --text-title-h3:              #56a7b0;
      --text-title-h4:              #309093;
      --text-title-h5:              #0b797d;
+     --text-title-h6:              #0b797d;
      --text-highlight-bg:          #22a578;
      --text-link:                  #83a598; 
      --text-a-hover:               #83a598; 
@@ -192,7 +189,7 @@ The Theme available in obsidian end at the [[#end-of-main-theme][end of main the
      /*  --text-selection:             add if needed */
      }
    #+END_SRC 
-** Headings normal (disabled)
+** Headings normal
    :PROPERTIES:
    :ID:       19d28af6-caa8-493d-8091-196695a4600c
    :END:
@@ -200,33 +197,49 @@ The Theme available in obsidian end at the [[#end-of-main-theme][end of main the
      .cm-header-1,
      .markdown-preview-section h1
      {
-         color: var(--text-title-h1) !important;
+     font-weight: 500;
+     font-size: 20px;
+     color: var(--text-title-h1) !important;
      }
 
      .cm-header-2,
      .markdown-preview-section h2
      {
-         color: var(--text-title-h2) !important;
+     font-weight: 500;
+     font-size: 20px;
+     color: var(--text-title-h2) !important;
      }
 
      .cm-header-3,
      .markdown-preview-section h3
      {
-         color: var(--text-title-h3) !important;
+     font-weight: 500;
+     font-size: 20px;
+     color: var(--text-title-h3) !important;
      }
 
      .cm-header-4,
      .markdown-preview-section h4
      {
-         color: var(--text-title-h4) !important;
+     font-weight: 500;
+     font-size: 20px;
+     color: var(--text-title-h4) !important;
      }
 
      .cm-header-5,
+     .markdown-preview-section h5
+     {
+     font-weight: 500;
+     font-size: 20px;
+     color: var(--text-title-h5) !important;
+     }
+
      .cm-header-6,
-     .markdown-preview-section h5,
      .markdown-preview-section h6
      {
-         color: var(--text-title-h5) !important;
+     font-weight: 500;
+     font-size: 20px;
+     color: var(--text-title-h5) !important;
      }
 
    #+END_SRC 
@@ -654,9 +667,14 @@ The Theme available in obsidian end at the [[#end-of-main-theme][end of main the
      /* End of main theme, extra functionality can be added below */
    #+END_SRC
 ** ---------------- personal extra hacks ----------------------
- #+BEGIN_SRC elisp
- /* -------------------------------------------------------------- */
- #+END_SRC 
+   #+BEGIN_SRC elisp
+     /* -------------------------------------------------------------- */
+   #+END_SRC 
+
+* ------------ personal extra hacks ----------------------
+#+BEGIN_SRC elisp
+/* -------------------------------------------------------------- */
+#+END_SRC 
 
 * Wasp Primary / Everything Else
 ** link pills SY
@@ -868,83 +886,6 @@ The Theme available in obsidian end at the [[#end-of-main-theme][end of main the
        font-size: 18px;
               }
  #+END_SRC 
-** Heading sizes
-*** info
-    bases of code taken from 
-    [[https://forum.obsidian.md/t/make-all-headings-same-size-as-lvl4-heading/5962/8][Make all headings same size]] combined with the format of gruvbox theme
-*** heading in edit mode
-    #+BEGIN_SRC elisp 
-        .cm-header-1 {
-        font-size: 16px;
-        color: var(--text-title-h1) !important;
-        }
-
-        .cm-header-2 {
-        font-size: 16px;
-        color: var(--text-title-h2) !important;
-        }
-
-        .cm-header-3 {
-        font-size: 16px;
-        color: var(--text-title-h3) !important;
-        }
-
-        .cm-header-4 {
-        font-size: 16px;
-        color: var(--text-title-h4) !important;
-        }
-
-        .cm-header-5 {
-        font-size: 16px;
-        color: var(--text-title-h5) !important;
-        }
-
-        .cm-header-6 {
-        font-size: 16px;
-        color: --text-normal;
-        color: var(--text-title-h6) !important;
-        }
-    #+END_SRC   
-*** Headings Preview 
-    #+BEGIN_SRC elisp 
-      .markdown-preview-view h1 {
-      font-weight: 500 !important;
-      font-size: 20px;
-      line-height: 24px;
-      color: var(--text-title-h1) !important;
-      }
-
-      .markdown-preview-view h2 {
-      font-size: 20px;
-      line-height: 24px;
-      color: var(--text-title-h2) !important;
-      }
-
-      .markdown-preview-view h3 {
-      font-size: 20px;
-      line-height: 24px;
-      color: var(--text-title-h3) !important;
-      }
-
-      .markdown-preview-view h4 {
-      font-size: 20px;
-      line-height: 24px;
-      color: var(--text-title-h4) !important;
-      }
-
-      .markdown-preview-view h5 {
-      font-size: 20px;
-      line-height: 24px;
-      color: var(--text-title-h5) !important;
-      }
-
-      .markdown-preview-view h6 {
-      font-size: 20px;
-      line-height: 24px;
-      color: --text-normal;
-      color: var(--text-title-h6) !important;
-      }
-    #+END_SRC
 ** andy mode horizontal mode v2.7
  #+BEGIN_SRC css
      /* Andy Matuschak mode! V2! for 0.7.0! (so... 2.7?) */
@@ -2072,6 +2013,7 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-header.cm-pr
        }
   #+END_SRC  
  
+  
   
   
   
