@@ -26,7 +26,7 @@ The Theme available in obsidian end at the [[#end-of-main-theme][end of main the
   - [[#vim-cursor-color-blink-width][Vim cursor color, blink, width]]
   - [[#org-sidian-preview--heading-sizes][org-sidian preview + heading sizes]]
   - [[#end-of-main-theme][end of main theme]]
-  - [[#------------------personal-extra-hacks-----------------------][----* ------------ personal extra hacks ----------------------]]
+  - [[#-----------------personal-extra-hacks-----------------------][---------------- personal extra hacks ----------------------]]
 - [[#wasp-primary--everything-else][Wasp Primary / Everything Else]]
   - [[#link-pills-sy][link pills SY]]
   - [[#tag-pills][tag pills]]
@@ -653,7 +653,7 @@ The Theme available in obsidian end at the [[#end-of-main-theme][end of main the
      /*-----------------------------------------*/
      /* End of main theme, extra functionality can be added below */
    #+END_SRC
-** ----* ------------ personal extra hacks ----------------------
+** ---------------- personal extra hacks ----------------------
  #+BEGIN_SRC elisp
  /* -------------------------------------------------------------- */
  #+END_SRC 
