@@ -1,8 +1,8 @@
 /* This Theme is called "Reverie" and Obsidian Theme created by Santi Younger */
 
 /* Last Update:
-2020-10-28 13:19
-*/
+2020-10-28 14:00
+     */
 
 :root
 {
@@ -454,7 +454,7 @@ font-size: 20px;
 h2:before {
 margin-left: 10px;
 margin-right: 8px;
-content: "○";
+content: "⭗";
 font-size: 14px;
 }
 
@@ -475,7 +475,7 @@ font-size: 20px;
 h5:before {
 margin-left: 40px;
 margin-right: 8px;
-content: "○";
+content: "⭗";
 font-size: 14px;
 }
 
@@ -523,5 +523,3 @@ line-height: 24px;
 
 /*-----------------------------------------*/
 /* End of main theme, extra functionality can be added below */
-
-/* -------------------------------------------------------------- */

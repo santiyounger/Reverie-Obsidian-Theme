@@ -56,5 +56,4 @@ This theme is mainly designed for dark mode, but light mode works well too.
  *I create this theme from an org-mode file in Spacemacs* and export it to an obsidian.css
 
  For anyone interested to learn more on the code to make this theme, check out the org-mode file I used [[file:reverie.org][reverie.org]]. There are extra features in there.
-
   

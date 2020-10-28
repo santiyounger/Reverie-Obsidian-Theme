@@ -26,8 +26,6 @@ The Theme available in obsidian end at the [[#end-of-main-theme][end of main the
   - [[#vim-cursor-color-blink-width][Vim cursor color, blink, width]]
   - [[#org-sidian-preview--heading-sizes][org-sidian preview + heading sizes]]
   - [[#end-of-main-theme][end of main theme]]
-  - [[#collapsible-sidebar][collapsible sidebar]]
-  - [[#-----------------personal-extra-hacks-----------------------][---------------- personal extra hacks ----------------------]]
 - [[#-------------personal-extra-hacks-----------------------][------------ personal extra hacks ----------------------]]
 - [[#wasp-primary--everything-else][Wasp Primary / Everything Else]]
   - [[#link-pills-sy][link pills SY]]
@@ -37,7 +35,7 @@ The Theme available in obsidian end at the [[#end-of-main-theme][end of main the
   - [[#image-zoom][image zoom]]
   - [[#columns-view-for-file-explorer-pane][columns view for file explorer pane]]
   - [[#arrows-before-links][arrows before links]]
-  - [[#collapsible-sidebar-1][collapsible sidebar]]
+  - [[#collapsible-sidebar][collapsible sidebar]]
   - [[#font][font]]
     - [[#info-1][info]]
     - [[#font-code][font code]]
@@ -70,6 +68,7 @@ The Theme available in obsidian end at the [[#end-of-main-theme][end of main the
   - [[#clutter-free-checkbox][clutter free checkbox]]
 - [[#my-own-custom][my own custom]]
   - [[#changing-internal-link-styles][changing internal link styles]]
+  - [[#org-sidian-preview--heading-sizes-1][org-sidian preview + heading sizes]]
   - [[#heading-color][heading color]]
   - [[#---------inactive-----------------][-------- inactive ----------------]]
   - [[#heading-color-v2][heading color v2]]
@@ -93,7 +92,7 @@ The Theme available in obsidian end at the [[#end-of-main-theme][end of main the
 ** Last update
    #+BEGIN_SRC elisp
      /* Last Update:
-     2020-10-23 15:48
+2020-10-28 14:00
      ,*/
    #+END_SRC   
 ** Block cursor color
@@ -595,7 +594,7 @@ The Theme available in obsidian end at the [[#end-of-main-theme][end of main the
      h2:before {
      margin-left: 10px;
      margin-right: 8px;
-     content: "○";
+     content: "⭗";
      font-size: 14px;
      }
 
@@ -616,7 +615,7 @@ The Theme available in obsidian end at the [[#end-of-main-theme][end of main the
      h5:before {
      margin-left: 40px;
      margin-right: 8px;
-     content: "○";
+     content: "⭗";
      font-size: 14px;
      }
 
@@ -667,22 +666,6 @@ The Theme available in obsidian end at the [[#end-of-main-theme][end of main the
      /*-----------------------------------------*/
      /* End of main theme, extra functionality can be added below */
    #+END_SRC
-** collapsible sidebar
-  [[https://forum.obsidian.md/t/meta-post-common-css-hacks/1978/3?u=santi][Meta Post - Common CSS Hacks - Share & showcase - Obsidian Forum]] 
-  #+BEGIN_SRC elisp
- .workspace-ribbon.is-collapsed:not(:hover) .workspace-ribbon-collapse-btn, 
- .workspace-ribbon.is-collapsed:not(:hover) .side-dock-actions, 
- .workspace-ribbon.is-collapsed:not(:hover) .side-dock-settings {display:none;}
- .workspace-ribbon.is-collapsed:not(:hover) {width: 0;}
- .workspace-split.mod-left-split[style="width: 0px;"] {margin-left: 0;}
- .workspace-split.mod-right-split[style="width: 0px;"] {margin-right: 0;}
- .workspace-ribbon {transition: none}
- #+END_SRC  
-** ---------------- personal extra hacks ----------------------
-   #+BEGIN_SRC elisp
-     /* -------------------------------------------------------------- */
-   #+END_SRC 
-
 * ------------ personal extra hacks ----------------------
 #+BEGIN_SRC elisp
 /* -------------------------------------------------------------- */
@@ -1864,9 +1847,100 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-prop
       .cm-hmd-internal-link
       {
       color: var(--text-a) !important;
-      text-decoration: underline !important;
+      text-decoration: none !important;
       }
  #+END_SRC 
+** org-sidian preview + heading sizes
+based on  [[https://forum.obsidian.md/t/hide-or-truncate-urls-in-editor-using-css/359/13][forum preview headings]] 
+◉
+○
+✸
+#+BEGIN_SRC elisp
+  /* This code applies org-sidian to preview mode */
+  /* updated */
+  /* 2020-10-28 10:44 */
+
+      h1:before {
+      margin-right: 8px;
+      content: "◉";
+      font-size: 20px;
+      color: #f8c537;
+      }
+
+      h2:before {
+      margin-left: 10px;
+      margin-right: 8px;
+      content: "○";
+      font-size: 14px;
+      color: #ff3333;
+      }
+
+      h3:before {
+      margin-left: 20px;
+      margin-right: 8px;
+      content: "✸";
+      font-size: 16px;
+      color: #f8c537;
+      }
+
+      h4:before {
+      margin-left: 30px;
+      margin-right: 8px;
+      content: "◉";
+      font-size: 20px;
+      color: #ff3333;
+      }
+
+      h5:before {
+      margin-left: 40px;
+      margin-right: 8px;
+      content: "○";
+      font-size: 14px;
+      color: #f8c537;
+      }
+
+      h6:before {
+      margin-left: 50px;
+      margin-right: 8px;
+      content: "✸";
+      font-size: 16px;
+      color: #ff3333;
+      }
+
+  /* heading size in preview mode (sizes and weights) */
+
+       .markdown-preview-view h1 {
+       font-weight: 500;
+       font-size: 20px;
+       line-height: 24px;
+       }
+       .markdown-preview-view h2 {
+       font-weight: 500;
+       font-size: 20px;
+       line-height: 24px;
+       }
+       .markdown-preview-view h3 {
+       font-weight: 500;
+       font-size: 20px;
+       line-height: 24px;
+       }
+       .markdown-preview-view h4 {
+       font-weight: 500;
+       font-size: 20px;
+       line-height: 24px;
+       }
+       .markdown-preview-view h5 {
+       font-weight: 500;
+       font-size: 20px;
+       line-height: 24px;
+       }
+
+       .markdown-preview-view h6{
+       font-weight: 500;
+       font-size: 20px;
+       line-height: 24px;
+       }
+   #+END_SRC
 ** heading color
    inspired by clutter free edit
   #+BEGIN_SRC elisp
