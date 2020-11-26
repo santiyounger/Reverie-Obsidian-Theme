@@ -1,7 +1,7 @@
 /* This Theme is called "Reverie" and Obsidian Theme created by Santi Younger */
 
 /* Last Update:
-2020-10-28 14:00
+2020-11-26 11:44
      */
 
 :root
@@ -438,88 +438,6 @@ opacity: 60% !important;
 width: 9px !important; 
 visibility: visible !important
 }
-
-/*     This section is for org-sidian bullets (for preview mode) */
-/* This is a project I created which you can find here: */
-/*       https://github.com/santiyounger/Org-sidian-Bullets */
-
-/* This specific code applies only on preview mode */
-
-h1:before {
-margin-right: 8px;
-content: "◉";
-font-size: 20px;
-}
-
-h2:before {
-margin-left: 10px;
-margin-right: 8px;
-content: "⭗";
-font-size: 14px;
-}
-
-h3:before {
-margin-left: 20px;
-margin-right: 8px;
-content: "✸";
-font-size: 16px;
-}
-
-h4:before {
-margin-left: 30px;
-margin-right: 8px;
-content: "◉";
-font-size: 20px;
-}
-
-h5:before {
-margin-left: 40px;
-margin-right: 8px;
-content: "⭗";
-font-size: 14px;
-}
-
-h6:before {
-margin-left: 50px;
-margin-right: 8px;
-content: "✸";
-font-size: 16px;
-}
-
-/* heading size in preview mode (sizes and weights) */
-
-.markdown-preview-view h1 {
-font-weight: 500;
-font-size: 20px;
-line-height: 24px;
-}
-.markdown-preview-view h2 {
-font-weight: 500;
-font-size: 20px;
-line-height: 24px;
-}
-.markdown-preview-view h3 {
-font-weight: 500;
-font-size: 20px;
-line-height: 24px;
-}
-.markdown-preview-view h4 {
-font-weight: 500;
-font-size: 20px;
-line-height: 24px;
-}
-.markdown-preview-view h5 {
-font-weight: 500;
-font-size: 20px;
-line-height: 24px;
-}
-
-.markdown-preview-view h6{
-font-weight: 500;
-font-size: 20px;
-line-height: 24px;
-}
-/*    end of org-sidian bulets (for preview mode) */
 
 /*-----------------------------------------*/
 /* End of main theme, extra functionality can be added below */
