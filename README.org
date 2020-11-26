@@ -6,8 +6,6 @@ This theme is mainly designed for dark mode, but light mode works well too.
   - [[#theme-name][Theme Name]]
     - [[#reverie][Reverie]]
   - [[#set-up][Set-Up]]
-  - [[#special-features][Special Features]]
-    - [[#org-sidian-bullets][Org-sidian Bullets]]
   - [[#let-me-know-if-you-like-it][Let Me Know If You Like It]]
   - [[#look-into-the-code][Look Into The Code]]
 
@@ -30,8 +28,7 @@ This theme is mainly designed for dark mode, but light mode works well too.
 ** Set-Up
  *Reverie is now available in Obsidian Community Themes.*
 
-  In obsidian go to Settings > Appearance > Turn on "Custom CSS"
- Click "See Community Themes"
+  In obsidian go to Settings > Appearance > Community Themes > Browse
 
  Search for: Reverie by Santi Younger
 
@@ -40,13 +37,6 @@ This theme is mainly designed for dark mode, but light mode works well too.
  If you get a window click "Overwrite"
 
  Done, enjoy!
-
-** Special Features
-*** Org-sidian Bullets 
-  This theme has [[https://github.com/santiyounger/Org-sidian-Bullets][Org-sidian-Bullets]] implemented into it.
-  This is what it looks like:
-
-  [[file:img/org-sidian-reverie.png]]
 
 ** Let Me Know If You Like It
 

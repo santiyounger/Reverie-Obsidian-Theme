@@ -672,6 +672,7 @@ The Theme available in obsidian end at the [[#end-of-main-theme][end of main the
      /*-----------------------------------------*/
      /* End of main theme, extra functionality can be added below */
    #+END_SRC
+
 * ------------ personal extra hacks ----------------------
 #+BEGIN_SRC elisp
 /* -------------------------------------------------------------- */
