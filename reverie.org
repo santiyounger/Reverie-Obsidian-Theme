@@ -1,6 +1,6 @@
   # -*- org-confirm-babel-evaluate: nil -*-
   #+title: Obsidian theme Personal Reverie
-  #+PROPERTY: header-args:elisp :tangle ~/Dropbox/obsidian/obsidian-personal/.obsidian/themes/Reverie.css :exports code :noweb yes
+  #+PROPERTY: header-args:elisp :tangle ~/Dropbox/notes/obsidian/obsidian-personal/.obsidian/themes/Reverie.css :exports code :noweb yes
 
 *This org-mode file is the main file I use to maintain this theme.* I make it on spacemacs and export it to obsidian.css with babel tangle.
 
@@ -97,9 +97,7 @@ The Theme available in obsidian end at the [[#end-of-main-theme][end of main the
    #+END_SRC 
 ** Last update
    #+BEGIN_SRC elisp
-     /* Last Update:
-2020-11-26 11:44
-     ,*/
+Last Update: 2020-12-24 15:40
    #+END_SRC   
 ** Block cursor color
    #+BEGIN_SRC css
@@ -153,9 +151,11 @@ The Theme available in obsidian end at the [[#end-of-main-theme][end of main the
      --pre-code:                   #073334;
      --interactive-before:         #7c6f64;
      --background-modifier-border: #95c1bb;
-     --text-selection:             #067d82;
+     --text-selection:             #16304D;
      }
    #+END_SRC 
+   
+   --text-selection:             #067d82;
 *** highlight match dark theme
     this is for ctrl+find
     #+BEGIN_SRC elisp
@@ -592,78 +592,78 @@ The Theme available in obsidian end at the [[#end-of-main-theme][end of main the
      /* This specific code applies only on preview mode */
 
      h1:before {
-     margin-right: 8px;
-     content: "◉";
-     font-size: 20px;
+         margin-right: 8px;
+         content: "◉";
+         font-size: 20px;
      }
 
      h2:before {
-     margin-left: 10px;
-     margin-right: 8px;
-     content: "⭗";
-     font-size: 14px;
+         margin-left: 10px;
+         margin-right: 8px;
+         content: "⭗";
+         font-size: 14px;
      }
 
      h3:before {
-     margin-left: 20px;
-     margin-right: 8px;
-     content: "✸";
-     font-size: 16px;
+         margin-left: 20px;
+         margin-right: 8px;
+         content: "✸";
+         font-size: 16px;
      }
 
      h4:before {
-     margin-left: 30px;
-     margin-right: 8px;
-     content: "◉";
-     font-size: 20px;
+         margin-left: 30px;
+         margin-right: 8px;
+         content: "◉";
+         font-size: 20px;
      }
 
      h5:before {
-     margin-left: 40px;
-     margin-right: 8px;
-     content: "⭗";
-     font-size: 14px;
+         margin-left: 40px;
+         margin-right: 8px;
+         content: "⭗";
+         font-size: 14px;
      }
 
      h6:before {
-     margin-left: 50px;
-     margin-right: 8px;
-     content: "✸";
-     font-size: 16px;
+         margin-left: 50px;
+         margin-right: 8px;
+         content: "✸";
+         font-size: 16px;
      }
 
      /* heading size in preview mode (sizes and weights) */
 
      .markdown-preview-view h1 {
-     font-weight: 500;
-     font-size: 20px;
-     line-height: 24px;
+         font-weight: 500;
+         font-size: 20px;
+         line-height: 24px;
      }
      .markdown-preview-view h2 {
-     font-weight: 500;
-     font-size: 20px;
-     line-height: 24px;
+         font-weight: 500;
+         font-size: 20px;
+         line-height: 24px;
      }
      .markdown-preview-view h3 {
-     font-weight: 500;
-     font-size: 20px;
-     line-height: 24px;
+         font-weight: 500;
+         font-size: 20px;
+         line-height: 24px;
      }
      .markdown-preview-view h4 {
-     font-weight: 500;
-     font-size: 20px;
-     line-height: 24px;
+         font-weight: 500;
+         font-size: 20px;
+         line-height: 24px;
      }
      .markdown-preview-view h5 {
-     font-weight: 500;
-     font-size: 20px;
-     line-height: 24px;
+         font-weight: 500;
+         font-size: 20px;
+         line-height: 24px;
      }
 
      .markdown-preview-view h6{
-     font-weight: 500;
-     font-size: 20px;
-     line-height: 24px;
+         font-weight: 500;
+         font-size: 20px;
+         line-height: 24px;
      }
      /*    end of org-sidian bulets (for preview mode) */
    #+END_SRC
@@ -1952,7 +1952,7 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-prop
  ◉
  ○
  ✸
- #+BEGIN_SRC elisp
+ #+BEGIN_SRC css
    /* This code applies org-sidian to preview mode */
    /* updated */
    /* 2020-10-28 10:44 */
@@ -2208,7 +2208,6 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-header.cm-pr
          background-color: orange;
        }
   #+END_SRC  
- 
-  
+   
   
   

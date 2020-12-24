@@ -1,8 +1,6 @@
 /* This Theme is called "Reverie" and Obsidian Theme created by Santi Younger */
 
-/* Last Update:
-2020-11-26 11:44
-     */
+Last Update: 2020-12-24 15:40
 
 :root
 {
@@ -38,7 +36,7 @@
 --pre-code:                   #073334;
 --interactive-before:         #7c6f64;
 --background-modifier-border: #95c1bb;
---text-selection:             #067d82;
+--text-selection:             #16304D;
 }
 
 .theme-dark .cm-s-obsidian span.obsidian-search-match-highlight {
