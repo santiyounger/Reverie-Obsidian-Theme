@@ -40,7 +40,7 @@ The Theme available in obsidian end at the [[#end-of-main-theme][end of main the
    #+END_SRC 
 ** Last update
    #+BEGIN_SRC elisp
-Last Update: 2020-12-24 15:40
+     Last Update: 2021-02-10 17:15
    #+END_SRC   
 ** Block cursor color
    #+BEGIN_SRC css
