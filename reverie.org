@@ -40,7 +40,8 @@ The Theme available in obsidian end at the [[#end-of-main-theme][end of main the
    #+END_SRC 
 ** Last update
    #+BEGIN_SRC elisp
-     Last Update: 2021-02-10 17:15
+     Last Update:
+2021-03-11 12:06
    #+END_SRC   
 ** Block cursor color
    #+BEGIN_SRC css
@@ -311,7 +312,7 @@ The Theme available in obsidian end at the [[#end-of-main-theme][end of main the
      line-height: normal !important;
      padding-left: 4px !important;
      padding-right: 4px !important;
-     background-color: var(--pre-code) !important;
+/*     background-color: var(--pre-code) !important; */
      }
 
      .HyperMD-table-row-0
