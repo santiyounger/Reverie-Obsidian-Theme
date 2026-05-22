@@ -19,7 +19,7 @@ body {
   --text-title-h4: #309093;
   --text-title-h5: #0b797d;
   --text-title-h6: #0b797d;
-  --text-highlight-bg: #22a578;
+  --text-highlight-bg: #c9d86a;
   --text-link: #83a598;
   --text-a-hover: #83a598;
   --inline-code: #83a598;
@@ -30,7 +30,7 @@ body {
   --text-on-accent: #fff;
   --interactive-accent-rgb: 44, 202, 183;
   --vim-cursor: #2ccab7;
-  --text-mark: #22a578;
+  --text-mark: #c9d86a;
   --pre-code: #073334;
   --interactive-before: #7c6f64;
   --background-modifier-border: #95c1bb;
@@ -65,6 +65,8 @@ body {
   --text-accent: #22a578;
   --interactive-accent-rgb: 34, 165, 120;
   --vim-cursor: #22a578;
+  --text-highlight-bg: #b8d4a0;
+  --text-mark: #b8d4a0;
 }
 
 .cm-header-1,
@@ -159,9 +161,35 @@ a:hover,
   text-decoration: none !important;
 }
 
-mark {
-  background-color: var(--text-mark) !important;
-  color: #E5A200 !important;
+/* ==highlight== / <mark> — focused and unfocused (keep readable, not grayed out) */
+mark,
+.markdown-preview-view mark,
+.markdown-rendered mark {
+  background-color: var(--text-highlight-bg) !important;
+  color: #000000 !important;
+  border-radius: 2px;
+  padding: 0 2px;
+  opacity: 1 !important;
+  filter: none !important;
+}
+
+.markdown-source-view.mod-cm6 span.cm-highlight,
+.cm-s-obsidian .cm-line span.cm-highlight,
+.cm-s-obsidian .cm-line:not(.cm-active) span.cm-highlight,
+.cm-s-obsidian .cm-line.cm-active span.cm-highlight {
+  background-color: var(--text-highlight-bg) !important;
+  color: #000000 !important;
+  -webkit-text-fill-color: #000000 !important;
+  border-radius: 2px;
+  opacity: 1 !important;
+  filter: none !important;
+  mix-blend-mode: normal !important;
+}
+
+/* == delimiters on inactive lines — stay visible, not washed out */
+.cm-s-obsidian .cm-line:not(.cm-active) span.cm-formatting-highlight {
+  color: #000000 !important;
+  opacity: 0.75 !important;
 }
 
 .view-actions a {
