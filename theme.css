@@ -27,15 +27,17 @@ body {
   --text-faint: #bdae93;
   --text-accent: #2ccab7;
   --text-accent-hover: #83a598;
-  /* Dark text on bright accent — white on #2ccab7 is ~2:1 (WCAG fail) */
-  --text-on-accent: #1a2023;
+  /* Buttons: dark accent + light label (passes cross-mode checks with light theme) */
+  --text-on-accent: #ffffff;
+  --text-on-accent-inverted: #1a2023;
   --text-selection: #16304d;
   --text-highlight-bg: #c9d86a;
   --background-modifier-border: #95c1bb;
   --interactive-normal: #a89984;
   --interactive-hover: #a89984;
-  --interactive-accent: #2ccab7;
-  --interactive-accent-rgb: 44, 202, 183;
+  /* Darker than link teal so --text-on-accent (#fff) meets WCAG on buttons */
+  --interactive-accent: #0b797d;
+  --interactive-accent-rgb: 11, 121, 125;
   --h1-color: #c1dde1;
   --h2-color: #8ab8bd;
   --h3-color: #56a7b0;
@@ -95,6 +97,7 @@ body {
   --text-accent: #0c5249;
   --text-accent-hover: #084540;
   --text-on-accent: #ffffff;
+  --text-on-accent-inverted: #1a2023;
   --text-highlight-bg: #b8d4a0;
   --background-modifier-border: #0a4a44;
   --interactive-normal: #534a42;
