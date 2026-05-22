@@ -12,6 +12,9 @@
 
 > A state of abstracted musing; daydreaming. A daydream. A state of mental abstraction in which more or less aimless fancy predominates over the reasoning faculty; dreamy meditation; fanciful musing.
 
+## Install and Use
+
+**Settings → Appearance → Themes → Manage** → search **Reverie** → **Install** → select **Reverie** as your theme.
 
 ## License
 
