@@ -27,20 +27,21 @@ body {
   --text-faint: #bdae93;
   --text-accent: #2ccab7;
   --text-accent-hover: #83a598;
-  --text-on-accent: #ffffff;
+  /* Dark text on bright accent — white on #2ccab7 is ~2:1 (WCAG fail) */
+  --text-on-accent: #1a2023;
   --text-selection: #16304d;
   --text-highlight-bg: #c9d86a;
   --background-modifier-border: #95c1bb;
-  --interactive-normal: #a0927e;
-  --interactive-hover: #a0927e;
-  --interactive-accent: #0b797d;
-  --interactive-accent-rgb: 11, 121, 125;
+  --interactive-normal: #a89984;
+  --interactive-hover: #a89984;
+  --interactive-accent: #2ccab7;
+  --interactive-accent-rgb: 44, 202, 183;
   --h1-color: #c1dde1;
   --h2-color: #8ab8bd;
   --h3-color: #56a7b0;
-  --h4-color: #4da1a9;
-  --h5-color: #4fa2ab;
-  --h6-color: #4fa2ab;
+  --h4-color: #52adb5;
+  --h5-color: #56b5aa;
+  --h6-color: #56b5aa;
   --h1-size: 20px;
   --h2-size: 20px;
   --h3-size: 20px;
@@ -73,8 +74,8 @@ body {
   --table-header-border-color: var(--background-modifier-border);
   --caret-color: #2ccab7;
   --divider-color: var(--background-secondary-alt);
-  --checkbox-border-color: #a0927e;
-  --checkbox-color: #a0927e;
+  --checkbox-border-color: #a89984;
+  --checkbox-color: #a89984;
   --checkbox-marker-color: var(--background-primary);
   --icon-color-hover: var(--text-accent);
 }
@@ -90,19 +91,20 @@ body {
   --background-secondary: #e3e3e3;
   --background-secondary-alt: #bebebe;
   --text-normal: #1a2023;
-  --text-faint: #554c44;
-  --text-accent: #0d574c;
-  --text-accent-hover: #12574f;
+  --text-faint: #534a42;
+  --text-accent: #0c5249;
+  --text-accent-hover: #084540;
+  --text-on-accent: #ffffff;
   --text-highlight-bg: #b8d4a0;
-  --background-modifier-border: #0d574e;
-  --interactive-normal: #a89984;
-  --interactive-hover: #a89984;
-  --interactive-accent: #0d574c;
-  --interactive-accent-rgb: 13, 87, 76;
-  --h1-color: #0d574e;
-  --h2-color: #0f574f;
-  --h3-color: #12574f;
-  --h4-color: #454f50;
+  --background-modifier-border: #0a4a44;
+  --interactive-normal: #534a42;
+  --interactive-hover: #534a42;
+  --interactive-accent: #0c5249;
+  --interactive-accent-rgb: 12, 82, 73;
+  --h1-color: #063530;
+  --h2-color: #073d38;
+  --h3-color: #084540;
+  --h4-color: #3b4646;
   --h5-color: #3b4646;
   --h6-color: #3b4646;
   --h1-size: 20px;
@@ -117,28 +119,28 @@ body {
   --h4-weight: 500;
   --h5-weight: 500;
   --h6-weight: 500;
-  --link-color: #0d574c;
-  --link-color-hover: #12574f;
+  --link-color: #0c5249;
+  --link-color-hover: #084540;
   --link-decoration: none;
   --link-decoration-hover: none;
-  --link-external-color: #0d574c;
-  --link-external-color-hover: #12574f;
+  --link-external-color: #0c5249;
+  --link-external-color-hover: #084540;
   --link-external-decoration: none;
   --link-external-decoration-hover: none;
   --code-background: #bebebe;
   --code-normal: #3d4f50;
   --code-size: 0.9em;
-  --graph-text: #12574f;
+  --graph-text: #084540;
   --graph-node-focused: rgb(var(--interactive-accent-rgb));
-  --nav-item-color-active: #0d574c;
+  --nav-item-color-active: #0c5249;
   --nav-item-background-active: var(--background-primary-alt);
-  --nav-collapse-icon-color: #0d574c;
-  --nav-collapse-icon-color-collapsed: #0d574c;
+  --nav-collapse-icon-color: #0c5249;
+  --nav-collapse-icon-color-collapsed: #0c5249;
   --table-header-border-color: var(--background-modifier-border);
-  --caret-color: #0d574c;
+  --caret-color: #0c5249;
   --divider-color: var(--background-secondary-alt);
-  --checkbox-border-color: #554c44;
-  --checkbox-color: #554c44;
+  --checkbox-border-color: #534a42;
+  --checkbox-color: #534a42;
   --checkbox-marker-color: var(--background-primary);
   --icon-color-hover: var(--text-accent);
 }
@@ -248,12 +250,14 @@ mark,
 }
 
 .mod-cta {
-  color: var(--background-secondary-alt);
+  color: var(--text-on-accent);
+  background-color: var(--interactive-accent);
   font-weight: var(--font-semibold);
 }
 
 .mod-cta:hover {
   background-color: var(--interactive-normal);
+  filter: brightness(1.06);
 }
 
 /* Vim mode block cursor (editor plugin) */

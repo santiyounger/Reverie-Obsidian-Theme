@@ -21,4 +21,4 @@
 MIT — see [LICENSE](LICENSE).
 
 
-Reverie is free to use. If you like it, just leave a comment on one of my latest [YouTube videos](https://www.youtube.com/@SantiYounger/videos) saying you use Wasp, or [send me an email](https://www.santiyounger.com/contact).
+Reverie is free to use. If you like it, just leave a comment on one of my latest [YouTube videos](https://www.youtube.com/@SantiYounger/videos) saying you use Reverie, or [send me an email](https://www.santiyounger.com/contact).
