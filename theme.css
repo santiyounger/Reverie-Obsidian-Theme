@@ -1,40 +1,82 @@
-/* This Theme is called "Reverie" and Obsidian Theme created by Santi Younger */
+/* Reverie — Obsidian theme by Santi Younger
+ * Follows https://help.obsidian.md/Extending+Obsidian/Themes/App+themes/Theme+guidelines
+ * CSS variables reference: https://docs.obsidian.md/Reference/CSS+variables/CSS+variables
+ */
 
-/* Last update: 2026-05-22 */
-
+/* Shared (light + dark) — use body per Obsidian theme docs */
 body {
-  --font-monospace: "Source Code Pro", monospace;
+  --font-monospace-theme: "Source Code Pro", monospace;
+  --font-text-size: 16px;
+  --bold-weight: 600;
+  --file-margins: 10px;
+  --file-header-font-weight: 600;
+  --divider-width: 1px;
+  --table-header-weight: 600;
+  --table-header-border-width: 2px;
+  --embed-padding: 10px;
+  /* No official highlight foreground variable; theme-specific */
+  --highlight-text-color: #000000;
 }
 
 .theme-dark {
-  --background-primary: #1A2023;
-  --background-primary-alt: #1A2023;
-  --background-secondary: #222B2F;
+  --background-primary: #1a2023;
+  --background-primary-alt: #1a2023;
+  --background-secondary: #222b2f;
   --background-secondary-alt: #073334;
   --text-normal: #faf2d6;
   --text-faint: #bdae93;
-  --text-title-h1: #c1dde1;
-  --text-title-h2: #8ab8bd;
-  --text-title-h3: #56a7b0;
-  --text-title-h4: #309093;
-  --text-title-h5: #0b797d;
-  --text-title-h6: #0b797d;
-  --text-highlight-bg: #c9d86a;
-  --text-link: #83a598;
-  --text-a-hover: #83a598;
-  --inline-code: #83a598;
-  --code-block: #83a598;
-  --text-a: #2ccab7;
-  --interactive-accent: #0b797d;
   --text-accent: #2ccab7;
-  --text-on-accent: #fff;
-  --interactive-accent-rgb: 44, 202, 183;
-  --vim-cursor: #2ccab7;
-  --text-mark: #c9d86a;
-  --pre-code: #073334;
-  --interactive-before: #7c6f64;
+  --text-accent-hover: #83a598;
+  --text-on-accent: #ffffff;
+  --text-selection: #16304d;
+  --text-highlight-bg: #c9d86a;
   --background-modifier-border: #95c1bb;
-  --text-selection: #16304D;
+  --interactive-normal: #7c6f64;
+  --interactive-hover: #7c6f64;
+  --interactive-accent: #0b797d;
+  --interactive-accent-rgb: 44, 202, 183;
+  --h1-color: #c1dde1;
+  --h2-color: #8ab8bd;
+  --h3-color: #56a7b0;
+  --h4-color: #309093;
+  --h5-color: #0b797d;
+  --h6-color: #0b797d;
+  --h1-size: 20px;
+  --h2-size: 20px;
+  --h3-size: 20px;
+  --h4-size: 20px;
+  --h5-size: 20px;
+  --h6-size: 20px;
+  --h1-weight: 500;
+  --h2-weight: 500;
+  --h3-weight: 500;
+  --h4-weight: 500;
+  --h5-weight: 500;
+  --h6-weight: 500;
+  --link-color: #2ccab7;
+  --link-color-hover: #83a598;
+  --link-decoration: none;
+  --link-decoration-hover: none;
+  --link-external-color: #2ccab7;
+  --link-external-color-hover: #83a598;
+  --link-external-decoration: none;
+  --link-external-decoration-hover: none;
+  --code-background: #073334;
+  --code-normal: #83a598;
+  --code-size: 0.9em;
+  --graph-text: #83a598;
+  --graph-node-focused: rgb(var(--interactive-accent-rgb));
+  --nav-item-color-active: #2ccab7;
+  --nav-item-background-active: var(--background-primary-alt);
+  --nav-collapse-icon-color: #2ccab7;
+  --nav-collapse-icon-color-collapsed: #2ccab7;
+  --table-header-border-color: var(--background-modifier-border);
+  --caret-color: #2ccab7;
+  --divider-color: var(--background-secondary-alt);
+  --checkbox-border-color: #7c6f64;
+  --checkbox-color: #7c6f64;
+  --checkbox-marker-color: var(--background-primary);
+  --icon-color-hover: var(--text-accent);
 }
 
 .theme-dark .cm-s-obsidian span.obsidian-search-match-highlight {
@@ -45,320 +87,155 @@ body {
 .theme-light {
   --background-primary: #e7e7e7;
   --background-primary-alt: #e7e7e7;
-  --background-secondary: #e3e3e3; /* thick menu border */
-  --background-secondary-alt: #bebebe; /* corner */
-  --text-normal: #1A2023;
+  --background-secondary: #e3e3e3;
+  --background-secondary-alt: #bebebe;
+  --text-normal: #1a2023;
   --text-faint: #665c54;
-  --text-title-h1: #1bb0b6;
-  --text-title-h2: #3fa7ab;
-  --text-title-h3: #458588;
-  --text-title-h4: #4b6667;
-  --text-title-h5: #3b4646;
-  --text-link: #458588;
-  --text-a-hover: #458588;
-  --inline-code: #458588;
-  --pre-code: #bebebe;
-  --interactive-before: #a89984;
-  --background-modifier-border: #1bb0b6;
-  --text-a: #22a578;
-  --interactive-accent: #22a578;
   --text-accent: #22a578;
-  --interactive-accent-rgb: 34, 165, 120;
-  --vim-cursor: #22a578;
+  --text-accent-hover: #458588;
   --text-highlight-bg: #b8d4a0;
-  --text-mark: #b8d4a0;
+  --background-modifier-border: #1bb0b6;
+  --interactive-normal: #a89984;
+  --interactive-hover: #a89984;
+  --interactive-accent: #22a578;
+  --interactive-accent-rgb: 34, 165, 120;
+  --h1-color: #1bb0b6;
+  --h2-color: #3fa7ab;
+  --h3-color: #458588;
+  --h4-color: #4b6667;
+  --h5-color: #3b4646;
+  --h6-color: #3b4646;
+  --h1-size: 20px;
+  --h2-size: 20px;
+  --h3-size: 20px;
+  --h4-size: 20px;
+  --h5-size: 20px;
+  --h6-size: 20px;
+  --h1-weight: 500;
+  --h2-weight: 500;
+  --h3-weight: 500;
+  --h4-weight: 500;
+  --h5-weight: 500;
+  --h6-weight: 500;
+  --link-color: #22a578;
+  --link-color-hover: #458588;
+  --link-decoration: none;
+  --link-decoration-hover: none;
+  --link-external-color: #22a578;
+  --link-external-color-hover: #458588;
+  --link-external-decoration: none;
+  --link-external-decoration-hover: none;
+  --code-background: #bebebe;
+  --code-normal: #458588;
+  --code-size: 0.9em;
+  --graph-text: #458588;
+  --graph-node-focused: rgb(var(--interactive-accent-rgb));
+  --nav-item-color-active: #22a578;
+  --nav-item-background-active: var(--background-primary-alt);
+  --nav-collapse-icon-color: #22a578;
+  --nav-collapse-icon-color-collapsed: #22a578;
+  --table-header-border-color: var(--background-modifier-border);
+  --caret-color: #22a578;
+  --divider-color: var(--background-secondary-alt);
+  --checkbox-border-color: #7c6f64;
+  --checkbox-color: #7c6f64;
+  --checkbox-marker-color: var(--background-primary);
+  --icon-color-hover: var(--text-accent);
 }
 
-.cm-header-1,
-.markdown-preview-section h1,
-.markdown-preview-view h1 {
-  font-weight: 500;
-  font-size: 20px;
-  color: var(--text-title-h1) !important;
-}
-
-.cm-header-2,
-.markdown-preview-section h2,
-.markdown-preview-view h2 {
-  font-weight: 500;
-  font-size: 20px;
-  color: var(--text-title-h2) !important;
-}
-
-.cm-header-3,
-.markdown-preview-section h3,
-.markdown-preview-view h3 {
-  font-weight: 500;
-  font-size: 20px;
-  color: var(--text-title-h3) !important;
-}
-
-.cm-header-4,
-.markdown-preview-section h4,
-.markdown-preview-view h4 {
-  font-weight: 500;
-  font-size: 20px;
-  color: var(--text-title-h4) !important;
-}
-
-.cm-header-5,
-.markdown-preview-section h5,
-.markdown-preview-view h5 {
-  font-weight: 500;
-  font-size: 20px;
-  color: var(--text-title-h5) !important;
-}
-
-.cm-header-6,
-.markdown-preview-section h6,
-.markdown-preview-view h6 {
-  font-weight: 500;
-  font-size: 20px;
-  color: var(--text-title-h5) !important;
-}
-
-/* ------------ other basic theme configurations ------------ */
-
+/* Reading view: prism blocks bundled with notes (no network assets) */
 .theme-dark code[class*="language-"],
 .theme-dark pre[class*="language-"],
 .theme-light code[class*="language-"],
 .theme-light pre[class*="language-"] {
-  text-shadow: none !important;
-  background-color: var(--pre-code) !important;
+  text-shadow: none;
+  background-color: var(--code-background);
 }
 
-.graph-view.color-circle,
-.graph-view.color-fill-highlight,
-.graph-view.color-line-highlight {
-  color: rgb(var(--interactive-accent-rgb)) !important;
-}
-
-.graph-view.color-text {
-  color: var(--text-a-hover) !important;
-}
-
-html,
-body {
-  font-size: 16px !important;
-}
-
-strong {
-  font-weight: 600 !important;
-}
-
-a,
-.cm-hmd-internal-link,
-.internal-link {
-  color: var(--text-a) !important;
-  text-decoration: none !important;
-}
-
-a:hover,
-.cm-hmd-internal-link:hover,
-.internal-link:hover,
-.cm-url {
-  color: var(--text-a-hover) !important;
-  text-decoration: none !important;
-}
-
-/* ==highlight== / <mark> — focused and unfocused (keep readable, not grayed out) */
+/*
+ * Highlights — Live Preview uses different markup than Reading view;
+ * see Code.md “syntax highlighting” note. Minimal selectors only.
+ */
 mark,
 .markdown-preview-view mark,
 .markdown-rendered mark {
-  background-color: var(--text-highlight-bg) !important;
-  color: #000000 !important;
-  border-radius: 2px;
+  background-color: var(--text-highlight-bg);
+  color: var(--highlight-text-color);
+  border-radius: var(--radius-s);
   padding: 0 2px;
-  opacity: 1 !important;
-  filter: none !important;
+  opacity: 1;
+  filter: none;
 }
 
 .markdown-source-view.mod-cm6 span.cm-highlight,
 .cm-s-obsidian .cm-line span.cm-highlight,
 .cm-s-obsidian .cm-line:not(.cm-active) span.cm-highlight,
 .cm-s-obsidian .cm-line.cm-active span.cm-highlight {
-  background-color: var(--text-highlight-bg) !important;
-  color: #000000 !important;
-  -webkit-text-fill-color: #000000 !important;
-  border-radius: 2px;
-  opacity: 1 !important;
-  filter: none !important;
-  mix-blend-mode: normal !important;
+  background-color: var(--text-highlight-bg);
+  color: var(--highlight-text-color);
+  -webkit-text-fill-color: var(--highlight-text-color);
+  border-radius: var(--radius-s);
+  opacity: 1;
+  filter: none;
+  mix-blend-mode: normal;
 }
 
-/* == delimiters on inactive lines — stay visible, not washed out */
 .cm-s-obsidian .cm-line:not(.cm-active) span.cm-formatting-highlight {
-  color: #000000 !important;
-  opacity: 0.75 !important;
+  color: var(--highlight-text-color);
+  opacity: 0.75;
 }
 
-.view-actions a {
-  color: var(--text-normal) !important;
-}
-
-.view-actions a:hover {
-  color: var(--text-a) !important;
-}
-
-.HyperMD-codeblock-bg {
-  background-color: var(--pre-code) !important;
-}
-
+/* Live Preview code block chrome (no dedicated variables) */
 .HyperMD-codeblock {
-  line-height: 1.4em !important;
-  color: var(--code-block) !important;
+  line-height: 1.4em;
 }
 
 .HyperMD-codeblock-begin {
-  border-top-left-radius: 4px !important;
-  border-top-right-radius: 4px !important;
+  border-top-left-radius: var(--radius-s);
+  border-top-right-radius: var(--radius-s);
 }
 
 .HyperMD-codeblock-end {
-  border-bottom-left-radius: 4px !important;
-  border-bottom-right-radius: 4px !important;
-}
-
-th {
-  font-weight: 600 !important;
-}
-
-thead {
-  border-bottom: 2px solid var(--background-modifier-border) !important;
-}
-
-.HyperMD-table-row {
-  line-height: normal !important;
-  padding-left: 4px !important;
-  padding-right: 4px !important;
-}
-
-.CodeMirror-foldgutter-folded,
-.is-collapsed .nav-folder-collapse-indicator {
-  color: var(--text-a) !important;
-}
-
-.nav-file-tag {
-  color: var(--text-a) !important;
-}
-
-.is-active .nav-file-title {
-  color: var(--text-a) !important;
-  background-color: var(--background-primary-alt) !important;
-}
-
-.nav-file-title {
-  border-bottom-left-radius: 0 !important;
-  border-bottom-right-radius: 0 !important;
-  border-top-left-radius: 0 !important;
-  border-top-right-radius: 0 !important;
-}
-
-img {
-  display: block !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
+  border-bottom-left-radius: var(--radius-s);
+  border-bottom-right-radius: var(--radius-s);
 }
 
 .HyperMD-list-line {
-  padding-top: 0 !important;
+  padding-top: 0;
 }
 
-.CodeMirror-linenumber,
-.cm-formatting {
-  font-family: var(--font-monospace) !important;
+/* Layout tweaks without a matching CSS variable */
+.markdown-rendered img,
+.markdown-preview-view img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.markdown-preview-section pre code,
-.markdown-preview-section code,
-.markdown-preview-view pre code,
-.markdown-preview-view code {
-  font-size: 0.9em !important;
-  background-color: var(--pre-code) !important;
+.markdown-embed {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
-.markdown-preview-section pre code,
-.markdown-preview-view pre code {
-  padding: 4px !important;
-  line-height: 1.4em !important;
-  display: block !important;
-  color: var(--code-block) !important;
-}
-
-.markdown-preview-section code,
-.markdown-preview-view code {
-  color: var(--inline-code) !important;
-}
-
-.cm-s-obsidian,
-.cm-inline-code {
-  -webkit-font-smoothing: auto !important;
-}
-
-.cm-inline-code {
-  color: var(--inline-code) !important;
-  background-color: var(--pre-code) !important;
-  padding: 1px !important;
-}
-
-.workspace-leaf-header-title {
-  font-weight: 600 !important;
-}
-
-.side-dock-title {
-  padding-top: 15px !important;
-  font-size: 20px !important;
-}
-
-.side-dock-ribbon-tab:hover,
-.side-dock-ribbon-action:hover,
-.side-dock-ribbon-action.is-active:hover,
-.nav-action-button:hover,
-.side-dock-collapse-btn:hover {
-  color: var(--text-a);
-}
-
-.side-dock {
-  border-right: 0 !important;
-}
-
-.cm-s-obsidian,
-.markdown-preview-view {
-  padding-left: 10px !important;
-  padding-right: 10px !important;
-}
-
-/* vertical resize-handle */
 .workspace-split.mod-vertical > * > .workspace-leaf-resize-handle,
 .workspace-split.mod-left-split > .workspace-leaf-resize-handle,
 .workspace-split.mod-right-split > .workspace-leaf-resize-handle {
-  width: 1px !important;
-  background-color: var(--background-secondary-alt);
+  width: var(--divider-width);
+  background-color: var(--divider-color);
 }
 
-/* horizontal resize-handle */
 .workspace-split.mod-horizontal > * > .workspace-leaf-resize-handle {
-  height: 1px !important;
-  background-color: var(--background-secondary-alt);
+  height: var(--divider-width);
+  background-color: var(--divider-color);
 }
 
-/* Remove vertical split padding */
 .workspace-split.mod-root .workspace-split.mod-vertical .workspace-leaf-content,
 .workspace-split.mod-vertical > .workspace-split,
 .workspace-split.mod-vertical > .workspace-leaf,
 .workspace-tabs {
-  padding-right: 0px;
-}
-
-.markdown-embed-title {
-  font-weight: 600 !important;
-}
-
-.markdown-embed {
-  padding-left: 10px !important;
-  padding-right: 10px !important;
-  margin-left: 10px !important;
-  margin-right: 10px !important;
+  padding-right: 0;
 }
 
 .suggestion-item.is-selected {
@@ -367,45 +244,25 @@ img {
 
 .empty-state-container:hover {
   background-color: var(--background-secondary-alt);
-  border: 5px solid var(--interactive-accent) !important;
-}
-
-.checkbox-container {
-  background-color: var(--interactive-before);
-}
-
-.checkbox-container:after {
-  background-color: var(--background-secondary-alt);
+  border: 5px solid var(--interactive-accent);
 }
 
 .mod-cta {
-  color: var(--background-secondary-alt) !important;
-  font-weight: 600 !important;
+  color: var(--background-secondary-alt);
+  font-weight: var(--font-semibold);
 }
 
 .mod-cta:hover {
-  background-color: var(--interactive-before) !important;
-  font-weight: 600 !important;
+  background-color: var(--interactive-normal);
 }
 
-input.task-list-item-checkbox {
-  border: 1px solid #7c6f64;
-  appearance: none;
-  -webkit-appearance: none;
-}
-
-input.task-list-item-checkbox:checked {
-  background-color: #7c6f64;
-  box-shadow: inset 0 0 0 2px var(--background-primary);
-}
-
+/* Vim mode block cursor (editor plugin) */
 .cm-fat-cursor .CodeMirror-cursor,
 .cm-animate-fat-cursor {
-  background-color: #2ccab7 !important;
-  opacity: 0.6 !important;
-  width: 9px !important;
-  visibility: visible !important;
+  background-color: var(--caret-color);
+  opacity: 0.6;
+  width: 9px;
+  visibility: visible;
 }
 
-/*-----------------------------------------*/
-/* End of main theme, extra functionality can be added below */
+/* End of Reverie theme */
