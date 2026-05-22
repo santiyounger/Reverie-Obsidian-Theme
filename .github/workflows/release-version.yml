@@ -2,8 +2,11 @@ name: Publish new theme version
 
 on:
   push:
-    tags:
-      - "*"
+    branches:
+      - master
+      - main
+    paths:
+      - manifest.json
 
 permissions:
   contents: write
@@ -14,19 +17,19 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Verify tag matches manifest version
+      - name: Read version from manifest.json
+        id: version
         run: |
-          TAG="${GITHUB_REF_NAME}"
           VERSION=$(node -p "JSON.parse(require('fs').readFileSync('manifest.json','utf8')).version")
-          if [ "$TAG" != "$VERSION" ]; then
-            echo "Tag ($TAG) must match manifest.json version ($VERSION)"
-            exit 1
-          fi
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+          echo "Creating draft release for version $VERSION"
 
       - name: Create draft GitHub release
         uses: softprops/action-gh-release@v2
         with:
-          name: ${{ github.ref_name }}
+          tag_name: ${{ steps.version.outputs.version }}
+          name: ${{ steps.version.outputs.version }}
+          target_commitish: ${{ github.sha }}
           draft: true
           files: |
             manifest.json

@@ -55,32 +55,36 @@ Community installs download `manifest.json` and `theme.css` from a **GitHub rele
 
 ### Automated (recommended)
 
-Pushing a version tag creates a **draft** GitHub release with `manifest.json` and `theme.css` attached. Draft releases are not installable from Obsidian until you publish the release on GitHub (and the community directory has picked up the new version).
+When you **push to `master` with a changed `manifest.json`**, GitHub Actions creates a **draft** release tagged with that `version`, with `manifest.json` and `theme.css` attached. No manual tag push needed.
 
-1. Bump the version (updates `package.json`, `manifest.json`, and `versions.json`):
+1. Bump `version` in `manifest.json` (e.g. `1.0.1` → `1.0.2`).
 
-   ```bash
-   npm version patch
+2. Add the same version to `versions.json` (value = `minAppVersion`):
+
+   ```json
+   {
+     "1.0.1": "1.0.0",
+     "1.0.2": "1.0.0"
+   }
    ```
 
-   Use `minor` or `major` instead of `patch` when appropriate.
+   Or run `npm version patch` to update `package.json`, `manifest.json`, and `versions.json` together.
 
-2. Push the commit and tag (`npm version` creates both; `.npmrc` sets tags like `1.0.2` without a `v` prefix):
+3. Commit and push:
 
    ```bash
+   git add manifest.json versions.json theme.css
+   git commit -m "Release 1.0.2"
    git push origin master
-   git push origin --tags
    ```
 
-   The tag name must equal `version` in `manifest.json`.
+4. On GitHub: **Actions** → **Publish new theme version** → then **Releases** → open the new **Draft** and verify assets.
 
-3. On GitHub, open **Actions** → confirm **Publish new theme version** succeeded, then **Releases** → open the new **Draft** release and verify `manifest.json` and `theme.css` are attached.
+5. When ready: [community.obsidian.md](https://community.obsidian.md) (if needed) → then **Publish release** on GitHub so users can install.
 
-4. When ready for users: on [community.obsidian.md](https://community.obsidian.md) (Themes → your theme profile), publish or approve the release there as required by the directory.
+Until step 5, the release stays a draft.
 
-5. On GitHub, open the same draft release and click **Publish release** so Obsidian can install that version from GitHub.
-
-Until step 5, the release stays a draft and community installs should not pick it up.
+**Note:** Each release needs a **new** `version` number. Re-pushing the same version without changing `manifest.json` will not run the workflow.
 
 ### Manual
 
